@@ -26,13 +26,12 @@ def addOne():
 def editOne(name):
 	langs = [language for language in languages if language['name'] == name]
 	langs[0]['name'] = request.json['name']
-	return jsonify({'language': langs[0]})
+	return jsonify({'language': languages})
 
 @app.route('/lang/<string:name>', methods=['DELETE'])
 def removeOne(name):
 	langs = [language for language in languages if language['name'] == name]
 	languages.remove(langs[0])
-	print(langs[0])
 	return jsonify({'language': languages})
 
 if __name__ == '__main__':
