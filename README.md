@@ -1,15 +1,16 @@
 ## Summary
 
 This repo is a practice of building RESTful API by Python Flask Framework.
-All the step is followed by [youtube channel](https://www.youtube.com/watch?v=CjYKrbq8BCw&list=PLXmMXHVSvS-AFMUmbBeIfL3PqTvgw8ygb) created by Pretty Printed.
+
+*All the step is followed by [youtube channel](https://www.youtube.com/watch?v=CjYKrbq8BCw&list=PLXmMXHVSvS-AFMUmbBeIfL3PqTvgw8ygb) created by Pretty Printed.*
 
 ## RESTful API
 
-RESTful API is just a type of coding format or style that everyone develops, then front-end and back-end engineer can easily cooperate with these rules.
+RESTful API is just a type of coding format or style that suggests everyone follows to develop, then front-end and back-end engineer can easily cooperate with these rules.
 
 RESTful API compose 4 main methods for response to each HTTP request :
 
-* GET - Retuen all the info which the user should get
+* GET - Return all the info which the user should get
 * POST - Get the info from the user and optionally return the data
 * PUT - Modify certain info
 * DELETE - Delete certain info
@@ -73,7 +74,7 @@ Open http://127.0.0.1:8080/lang will show
         langs = [language for language in languages if language['name'] == name]
         return jsonify({'language': langs[0]})
 
-<string:name\> means this will accept a variable named *name* and the type is *string*
+/<string:name> means this will accept a variable named *name* and the type is *string*
 
 Open http://127.0.0.1:8080/lang/JavaScript will show
 
@@ -175,5 +176,5 @@ Will show
 
 ## Conclusion
 
-These four methods are the commonly used function, we can learn how to build Bsic RESTful API. However, this practice still have to connect to MySQL or MongoDB to make it more practical. So, let's hurry up to try connecting to database!
+These four methods are the commonly used function. In this repo, we learn how to build Basic RESTful API. However, this practice still have to connect to MySQL or MongoDB to make it more practical. So, let's hurry up to try connecting to database!
 
